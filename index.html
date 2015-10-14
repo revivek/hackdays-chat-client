@@ -1,9 +1,96 @@
 <html>
   <head>
     <title>Sample App</title>
+
+    <style>
+      body,
+      input {
+        font-family: Verdana, Geneva, sans-serif;
+      }
+
+      #root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .Chat {
+        width: 320px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .ChatHeader {
+        padding: 10px;
+        height: 20px;
+      }
+
+      .ChatHeader-title {
+        font-size: 14px;
+        font-weight: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        color: #414346;
+      }
+
+      .ChatThread {
+        flex: 1 0 auto;
+        overflow-y: scroll;
+        border-left: 1px solid #8d8f92;
+        border-right: 1px solid #8d8f92;
+        border-top: 1px solid #8d8f92;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        padding: 5px 20px 15px;
+        line-height: 1.4;
+        max-height: 575px;
+      }
+
+      .ChatNewMessage {
+        height: 70px;
+      }
+
+      .ChatNewMessage-input {
+        border: 1px solid #8d8f92;
+        height: 50px;
+        width: 100%;
+        padding: 0 14px;
+        font-size: 16px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        outline: none;
+      }
+
+      .ChatNewMessage-input:focus {
+        outline: none;
+        border-color: #414346;
+        transition: border-color 0.1s ease;
+      }
+
+      .ChatThreadMessageMember {
+        font-size: 12px;
+        font-weight: bold;
+        color: #414346;
+        margin-top: 10px;
+      }
+
+      .ChatThreadMessageText {
+        font-size: 14px;
+      }
+
+      .ChatThreadMessageImage {
+        width: 100%;
+        height: auto;
+        margin: 2px 0;
+      }
+    </style>
   </head>
   <body>
-    <div id='root'>
+    <div id="root">
     </div>
     <script src="/static/bundle.js"></script>
   </body>
