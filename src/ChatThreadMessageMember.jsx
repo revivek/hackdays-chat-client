@@ -11,10 +11,6 @@ export default React.createClass({
   render: function() {
     return (
       <div className="ChatThreadMessageMember">
-        <span 
-          className="ChatThreadMessageMember-dot"
-          style={{backgroundColor: '#' + this.props.member.colorHex}}></span>
-        <span>{this.props.member.name}</span>
       </div>
     );
   }

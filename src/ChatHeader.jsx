@@ -11,9 +11,6 @@ export default React.createClass({
   render: function() {
     return (
       <div className="ChatHeader">
-        <h1 className="ChatHeader-title" title={this.props.name}>
-          {this.props.name}
-        </h1>
       </div>
     );
   }

@@ -11,7 +11,6 @@ export default React.createClass({
   render: function() {
     return (
       <div className="ChatThreadMessageText">
-        {this.props.text}
       </div>
     );
   }
