@@ -31,7 +31,7 @@ export default React.createClass({
   // React
   getDefaultProps: function() {
     return {
-      socket: socketIO('http://localhost:7076')
+      socket: socketIO('https://hackdays-chat-server.herokuapp.com/')
     };
   },
 
