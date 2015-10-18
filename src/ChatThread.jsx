@@ -24,16 +24,11 @@ export default React.createClass({
   render: function() {
     return (
       <div className="ChatThread">
-        {this.props.messages.map((message, idx, messages) => {
-          const showMemberHeader = (
-            idx === 0 || messages[idx - 1].mID !== message.mID
-          );
-
+        {this.props.messages.map((message, idx) => {
           return (
             <ChatThreadMessage
               key={idx}
               member={this.props.members[message.mID]}
-              showMemberHeader={showMemberHeader}
               message={message} />
           )
         })}
